@@ -12,6 +12,7 @@ func TestHumanDate(t *testing.T) {
 		tm   time.Time
 		want string
 	}{
+		//refactor date tests
 		{
 			name: "UTC",
 			tm:   time.Date(2022, 3, 17, 10, 15, 0, 0, time.UTC),
