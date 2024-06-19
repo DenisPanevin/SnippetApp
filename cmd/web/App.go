@@ -29,6 +29,7 @@ type Application struct {
 }
 
 func openDB(dsn string) (*sql.DB, error) {
+	//opening db
 	db, err := sql.Open("mysql", dsn)
 	if err != nil {
 		return nil, err
